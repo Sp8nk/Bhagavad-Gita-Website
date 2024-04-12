@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+        body {
+            width: 100%;
+            height: auto;
+            background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(temple1.jpg);
+            /* background: url("peakpx.jpg"); */
+            background-size: cover;
+            background-position: top;
+        
+        }
+
+        .header{
+            color: white;
+        }
+        
+        
+        .left{
+            font-family: myFont;
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            /* border: 5px solid red; */
+        }
+
+        img{
+            filter: invert(100);
+            max-width: 50%;  
+            width: 250px;
+            margin-left: 20px;
+            
+        }
+
+
+
+        .left div {
+            line-height: 19px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .centre{
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 20px auto;
+            width: 45%;
+            
+        }
+
+        .navbar{
+            display: inline-block;
+            margin: 15px auto;
+        }
+        
+        .navbar li{
+            /* border: 2px solid red; */
+            list-style: none;
+            display: inline-block;
+            margin: 0px 13px;
+            padding: 4px 12px;
+            position: relative;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            font-family: myFont2;
+            font-size: large;
+        }
+        .navbar li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        
+        .navbar li:hover::after{
+            width: 100%;
+        }
+        
+        .navbar li a:hover{
+            color: #b9b9b9;  
+        }
+        
+        
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 32px;
+            top: 20px;
+            /* border: 5px solid red; */
+        }
+
+        .btn2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span{
+            background: #009688;   
+            height: 100%; 
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        .btn2:hover span{
+            width: 100%;
+
+        }
+
+        .btn2:hover{
+            border: none;
+        }
+
+        .btn{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            padding: 4px 10px;
+            margin: 15px 4px;
+            background-color: rgb(81 92 103);
+            color: white;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        .btn:hover{
+            background-color: rgb(64, 75, 86);
+            cursor: pointer;
+        }
+        
+        .btn:active{
+            color: black;
+        }
+
+        h2 {
+            margin-top: 100px;
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .container {
+
+            /* border: 2px solid red; */
+            height: 400px;
+            width: 1350px;
+            margin: 40px auto;
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* .box {
+            border: 5px solid #b13c3c;
+            border-radius: 20px;
+            background-color: #d4d5d6;
+            height: 30px;
+            width: 200px;
+            box-shadow: 8px 8px 15px rgb(162, 162, 162);
+
+        } */
+
+        /* img {
+            display: block;
+            width: 30%;
+            margin: 2px auto;
+        } */
+
+        .smallboxhead {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 40px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .smallboxhead:hover span{
+            width: 100%;
+
+        }
+
+        .smallboxhead:hover{
+            border: none;
+        }
+
+        .smallboxbody {
+            font-size: 15px;
+            padding: 0px 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <img src="pngegg.png" alt="">
+            </div>
+
+            <div class="centre">
+                <ul class="navbar">
+                    <li><a href="Minor.html">☰ Menu</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">🌏︎ Language</a></li>
+                    <li><a href="">𖡌 Sign in</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <button class="btn">📞 Call</button>
+                <button class="btn">✉️ Email</button>
+            </div>
+        </div>
+    </header>
+
+    <h2>TEXTS</h2>
+
+    <div class="container">
+        
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 1.pdf" target="_blank">Text 1</a></div>
+            
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 2.pdf" target="_blank">Text 2</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 3.pdf" target="_blank">Text 3</a></div>
+            
+        </div>
+
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 4.pdf" target="_blank">Text 4</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 5.pdf" target="_blank">Text 5</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 6.pdf" target="_blank">Text 6</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 7.pdf" target="_blank">Text 7</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 8.pdf" target="_blank">Text 8</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 9.pdf" target="_blank">Text 9</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span><a href="Chapter1_Text/TEXT 10.pdf" target="_blank">Text 10</a></div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span>Text 11</div>
+            
+        </div>
+
+        <div class="box">
+            
+            <div class="smallboxhead"><span></span>Text 12</div>
+            
+        </div>
+
+    </div>
+
+   
+</body>
+
+</html>

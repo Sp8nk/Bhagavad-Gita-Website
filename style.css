@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'myFont';
+    src: url(Vampire.ttf);
+
+    /* font-family: shadow;
+    src: url(Shadow.ttf); */
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(KOMIKAX_.ttf);
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url(Vogue.ttf);
+}
+
